@@ -1,0 +1,36 @@
+CLIENTE
+    - nome
+    - bairro
+    - telefone
+    avalia(pedido, restaurante, entregador)
+
+RESTAURANTE
+    - nome
+    - bairro
+    - cozinha
+    - avaliação
+    - taxa de entrega
+
+PRATO(restaurante)
+    - nome
+    - veg, gluten, etc (true ou false)
+    - valor
+    - pedidos
+    - quantos serve
+
+PEDIDO (cliente, prato, restaurante, entregador)
+    - tempo
+    - valor total
+    novo(c, p, r, e)
+    prepara()
+    separaPraEntrega()
+    busca(pedido)
+    entrega(pedido)
+    finalizado() // True ou False
+
+ENTREGADOR
+    - nome
+    - quanto recebe
+    - bairros
+    - veículo
+    - avaliação
