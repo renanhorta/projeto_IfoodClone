@@ -3,7 +3,8 @@ class Entregador:
     self.nome = nome
     self.veiculo = veiculo
     self.local = local
-    self.aEntregador = []
+    self.avaliacao = []
+    self.avaliacaoMedia = 0
 
   def getNome(self):
     return self.nome
@@ -23,5 +24,16 @@ class Entregador:
   def atualizaLocal(self):
     novoLocal = print("Informe o seu novo local")
     return novoLocal
+  
+  # se o array de avaliações não estiver vazio,
+  # todas as avaliações são somadas e divididas pelo número de avaliações (no caso, o tamanho do array de avaliações)
+  # caso o array esteja vazio, retorna None
+  def getAvaliacao(self):
+      if self.avaliacao != []:
+          for a in self.avaliacao:
+              self.avaliacaoMedia += a
+          return round(self.avaliacaoMedia/len(self.avaliacao), 2)
+      else:
+          return None
 
   

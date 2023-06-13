@@ -19,11 +19,11 @@ class Cliente:
     # dentro dos objetos, é feita a média das avaliações dentro do array
     def avalia(pedido, restaurante, entregador):
 
-        aRestaurante = float(input('Qual a sua avaliação do restaurante? (1 a 5)'))
+        aRestaurante = float(input('Qual a sua avaliação do restaurante? (1 a 5)\n'))
         if (aRestaurante >= 1 and aRestaurante <= 5):
             restaurante.avaliacao.append(aRestaurante)
 
-        aEntregador = float(input('Qual a sua avaliação do entregador? (1 a 5)'))
+        aEntregador = float(input('Qual a sua avaliação do entregador? (1 a 5)\n'))
         if (aEntregador >= 1 and aEntregador <= 5):
             entregador.avaliacao.append(aEntregador)
     

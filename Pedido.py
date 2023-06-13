@@ -17,3 +17,12 @@ pr1 = Prato('Yakissoba de Legumes', 'gluten', 19.99, 1, 1)
 p1 = Pedido(c1, r1, pr1, e1)
 
 print(p1.entregador.valorReceber(pr1, r1))
+
+p1.cliente.avalia(r1, e1)
+p1.cliente.avalia(r1, e1)
+
+print(r1.getAvaliacao())
+print(e1.getAvaliacao())
+
+print(r1.avaliacao)
+print(e1.avaliacao)
