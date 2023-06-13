@@ -1,4 +1,4 @@
-class Prato:
+class Prato():
   def __init__(self,nome,tipoDePrato,preco,quantidade,qntServe=2):
     self.nome = nome
     self.tipoDePrato = tipoDePrato
@@ -24,9 +24,9 @@ class Prato:
       return "Pode conter tropomiosina, Atenção alergicos a frutos do mar!"
     elif tipoDePrato == "gluten" or tipoDePrato == "lactose":
       return "Pode conter glúten ou lactose. Atenção celiacos!"
-    elif tipoDePrato == "vegetariano"
+    elif tipoDePrato == "vegetariano":
       return "Prato vegetáriano, não contém proteina animal"
-    elif tipoDePrato == "vegano"
+    elif tipoDePrato == "vegano":
       return "Prato vegano, não contém produtos de origem animal"
     else:
       return "Prato com produtos de origem animal e outros tipos de alimentos."

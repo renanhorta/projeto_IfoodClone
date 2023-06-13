@@ -14,9 +14,9 @@ class Entregador:
   def getLocal(self):
     return self.local
 
-  def valorReceber(self):
+  def valorReceber(self, prato, restaurante):
     txEntrega = (prato.getPreco()) + (restaurante.getTaxa()) * 0.13
-    return txEntrega
+    return round(txEntrega, 2)
 
   #Metodo para atualzar o local do entregador( nesse projeto será atualizado na hora de pegar o prato
   #e na hora de chegar próximo no cliente, provalvelmente na rua.)
