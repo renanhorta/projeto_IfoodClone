@@ -2,10 +2,10 @@ class Prato():
   def __init__(self,nome,tipoDePrato,preco,quantidade,qntServe=2):
     self.nome = nome
     self.tipoDePrato = tipoDePrato
-    self.preco = preco
-    self.quantidadeVendida = quantidade
+    self.preco = float(preco)
+    self.quantidadeVendida = int(quantidade)
     #  Serve quantas pessoas. padrão vai ser 2 pessoas por cada prato.
-    self.quantoServe = qntServe
+    self.quantoServe = int(qntServe)
 
   def getNome(self):
     return self.nome

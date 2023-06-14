@@ -1,3 +1,6 @@
+from Restaurante import Restaurante
+from Prato import Prato
+
 class Cliente:
 
     def __init__(self, n, b, t):
@@ -27,3 +30,19 @@ class Cliente:
         if (aEntregador >= 1 and aEntregador <= 5):
             entregador.avaliacao.append(aEntregador)
     
+    def pedirPrato(self, restaurante):
+        '''restCliente = input("\nInsira o restaurante que queira pedir.\n(rest1, rest2, rest3, rest4) : ")
+        pratoCliente = input("\nInsira o prato de escolhar")
+        if prato:
+            return prato.pedido
+        else:
+            return None
+        '''
+        restaurante.getCardapio()
+        pratoEscolhido = input("\nSelecione um prato pelo nome: ")
+        
+        if restaurante.validarPrato(pratoEscolhido) is not False:
+            return restaurante.validarPrato(pratoEscolhido)
+        else:
+            self.pedirPrato(restaurante)
+
