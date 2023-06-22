@@ -1,5 +1,5 @@
-from Restaurante import Restaurante
-from Prato import Prato
+
+
 
 class Cliente:
 
@@ -41,8 +41,9 @@ class Cliente:
         restaurante.getCardapio()
         pratoEscolhido = input("\nSelecione um prato pelo nome: ")
         
-        if restaurante.validarPrato(pratoEscolhido) is not False:
-            return restaurante.validarPrato(pratoEscolhido)
-        else:
+        if restaurante.validarPrato(pratoEscolhido) is False:
+            print("Escolha um prato disponivel.")
             self.pedirPrato(restaurante)
+        else:
+            restaurante.getPrato(pratoEscolhido)
 

@@ -1,3 +1,4 @@
+
 class Prato():
   def __init__(self,nome,tipoDePrato,preco,quantidade,qntServe=2):
     self.nome = nome
@@ -11,6 +12,10 @@ class Prato():
     return self.nome
   
   def getPreco(self):
+    return self.preco
+
+
+  def getPreco_final(self):
     return self.preco * self.quantidadeVendida
 
   def quantosServem(self):

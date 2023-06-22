@@ -16,7 +16,7 @@ class Entregador:
     return self.local
 
   def valorReceber(self, prato, restaurante):
-    txEntrega = (prato.getPreco()) + (restaurante.getTaxa()) * 0.13
+    txEntrega = (prato.getPreco_final()) + (restaurante.getTaxa()) * 0.13
     return round(txEntrega, 2)
 
   #Metodo para atualzar o local do entregador( nesse projeto será atualizado na hora de pegar o prato
@@ -25,9 +25,9 @@ class Entregador:
     novoLocal = print("Informe o seu novo local")
     return novoLocal
   
-  # se o array de avaliações não estiver vazio,
-  # todas as avaliações são somadas e divididas pelo número de avaliações (no caso, o tamanho do array de avaliações)
-  # caso o array esteja vazio, retorna None
+  # se a lista de avaliações não estiver vazio,
+  # todas as avaliações são somadas e divididas pelo número de avaliações (no caso, o tamanho da lista de avaliações)
+  # caso a lista esteja vazio, retorna None
   def getAvaliacao(self):
       if self.avaliacao != []:
           for a in self.avaliacao:

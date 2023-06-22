@@ -34,3 +34,21 @@ ENTREGADOR
     - bairros
     - veículo
     - avaliação
+
+
+------------------------------------------------------
+
+Simule a operação do IFood implementando pelo menos 4 membros públicos e privados para as seguintes classes do domínio:
+
+    Cliente
+    Restaurante
+    Prato
+    Pedido
+    Entregador
+
+Operações que devem ser implementadas:
+
+    Cliente faz pedido de pratos a um restaurante
+    Restaurante prepara pedido
+    Restaurante finaliza pedido e chama entregador
+    Entregador faz a entrega do pedido para o cliente
